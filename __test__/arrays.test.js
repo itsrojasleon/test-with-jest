@@ -1,6 +1,6 @@
 import { fruits, colors } from '../arrays';
 
-describe('Exists', () => {
+describe('Exists fruit', () => {
   test('There a banana?', () => {
     expect(fruits).toContain('banana');
   });
@@ -9,5 +9,11 @@ describe('Exists', () => {
   // });
   test('Size', () => {
     expect(fruits).toHaveLength(5);
+  });
+});
+
+describe('Colors', () => {
+  test('red', () => {
+    expect(colors).toContain('red');
   });
 });
